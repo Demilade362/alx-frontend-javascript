@@ -10,5 +10,6 @@ export default function handleProfileSignup(firstName, lastName, filename) {
     for (const value of values) {
       arr.push({ status: value.status, value: value.value || value.reason });
     }
+    return arr;
   });
 }
