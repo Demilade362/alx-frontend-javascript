@@ -1,6 +1,8 @@
 import { createUser } from './utils';
 
-export default function handleProfileSignup() {
+function handleProfileSignup() {
   const response = createUser();
-  return response.then((data) => console.log(data));
+  return response.then((data) => console.log(data.firstName, data.lastName));
 }
+
+handleProfileSignup();
